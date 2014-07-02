@@ -1,0 +1,63 @@
+name: CustomVillager
+author: Chrisbotcom
+website: http://chrisbotcom.github.io/CustomVillager/
+main: io.github.chrisbotcom.customvillager.CustomVillager
+description: CustomVillager
+version: 1.2
+commands:
+    cvspawn:
+        description: Spawn a villager. Optionally define name and profession. Use /cvprofession to list professions.
+        usage: /cvspawn [name] [profession]
+    cvselect:
+        aliases: cvs
+        description: Select a villager.
+        usage: /cvselect and then right-click a villager.
+    cvcancel:
+        description: Cancel villager selection.
+        usage: /cvcancel
+    cvrelease:
+        description: Release a villager.
+        usage: /cvlease
+    cvkill:
+        description: Remove the selected villager.
+        usage: /cvkill
+    cvname:
+        aliases: cvn
+        description: Name or unname a villager.
+        usage: /cvname [name]
+    cvprofession:
+        aliases: cvp
+        description: Set or display a villager profession.
+        usage: /cvprofession [FARMER|LIBRARIAN|PRIEST|BLACKSMITH|BUTCHER]
+    cvinvulnerable:
+        aliases: cvgod
+        description: Set or display vulnerability for a villager.
+        usage: /cvinvulnerable or /cvgod [on|off]
+    cvinventory:
+        aliases: cvi
+        description: List villager inventory.
+        usage: /cvinventory
+    cvbuy:
+        description: Add buy item in hand to recipe.
+        usage: /cvbuy
+    cvsell:
+        description: Add sell item in hand to recipe.
+        usage: /cvsell
+    cvclear:
+        description: Clear buy and sell items.
+        usage: /cvclear
+    cvadd:
+        description: Clear recipe.
+        usage: /cvadd
+    cvdelete:
+        description: Delete recipe.
+        usage: /cvdelete
+    cvconfine:
+        aliases: cvc
+        description: Confine villager to player location.
+        usage: /cvconfine
+
+permissions:
+    customvillager.*:
+        description: Gives access to all commands
+        default: op
