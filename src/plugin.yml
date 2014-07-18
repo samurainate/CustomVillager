@@ -3,7 +3,7 @@ author: Chrisbotcom
 website: http://chrisbotcom.github.io/CustomVillager/
 main: io.github.chrisbotcom.customvillager.CustomVillager
 description: CustomVillager
-version: 1.2
+version: 1.3
 commands:
     cvspawn:
         description: Spawn a villager. Optionally define name and profession. Use /cvprofession to list professions.

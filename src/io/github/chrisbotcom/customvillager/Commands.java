@@ -84,6 +84,8 @@ class Commands implements CommandExecutor {
                 plugin.saveConfigMerchant(villager, player.getLocation());
 
                 if (name != null) {
+                    name = name.replace('&', '\u00A7');
+                    name = name.replace('_', ' ');
                     villager.setCustomName(name);
                     villager.setCustomNameVisible(true);
                 }
@@ -153,6 +155,8 @@ class Commands implements CommandExecutor {
                     }
 
                     name = name.replace('&', '\u00A7').trim();
+                    name = name.replace('_', ' ');
+
 
                     plugin.villagers.get(player).setCustomName(name);
                     plugin.villagers.get(player).setCustomNameVisible(true);
